@@ -37,23 +37,21 @@ void del_rec(int ptr)
     free(karta[ptr].fuel);
 
     for(int i = ptr; i < pocet_zaznamu; i++)
-    {
         karta[i] = karta[i + 1];
-    }
 
     pocet_zaznamu--;
 }
 
 // +++ vypis vsech zaznamu z karty
-void all_rec(void)
+void all_rec()
 {
-    printf("Karta jízd:\n\n");
+    printf("Výpis z karty jízd:\n\n");
 
     if(pocet_zaznamu)
         for(int i = 0; i < pocet_zaznamu; i++)
             printf("Jmého: %8s, km: %7.1f, fuel: %5.1f\n", karta[i].name, *(karta[i].km), *(karta[i].fuel));
     else
-        printf("Nebyly nalazene zadne zaznamy");
+        printf("Nebyly nalazene zadne zaznamy.");
 
     printf("\n");
 }

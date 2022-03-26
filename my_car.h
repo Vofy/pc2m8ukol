@@ -4,8 +4,6 @@
 typedef struct t_car a_car;
 
 a_car *add_car(char *my_znacka, unsigned short int my_rok_vyroby);
-void del_car(int ptr);
-void all_cars(void);
-void show_car(a_car *car);
+void   show_car(a_car *car);
 
 #endif // MY_CAR_H_INCLUDED
