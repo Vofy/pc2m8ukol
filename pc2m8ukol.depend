@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1648319484 source:/home/vofy/Projects/pc2m8ukol/main.c
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"my_rec.h"
+	"my_car.h"
+
+1648310456 source:/home/vofy/Projects/pc2m8ukol/my_rec.c
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+
+1648305045 /home/vofy/Projects/pc2m8ukol/my_rec.h
+
+1648319150 source:/home/vofy/Projects/pc2m8ukol/my_car.c
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+
+1648309633 /home/vofy/Projects/pc2m8ukol/my_car.h
+
