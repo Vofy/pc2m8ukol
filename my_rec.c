@@ -32,9 +32,7 @@ void add_rec(char *my_name, double my_km, double my_fuel)
 // +++ smazani i-teho zaznamu z karty
 void del_rec(int ptr)
 {
-    free(karta[ptr].name);
-    free(karta[ptr].km);
-    free(karta[ptr].fuel);
+    free(karta[ptr]);
 
     for(int i = ptr; i < pocet_zaznamu; i++)
         karta[i] = karta[i + 1];
