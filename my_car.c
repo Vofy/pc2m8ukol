@@ -4,24 +4,21 @@
 
 typedef struct t_car
 {
-    char               *znacka;
-    unsigned short int *rok_vyroby;
+    char              *znacka;
+    unsigned short int rok_vyroby;
 } a_car;
 
 a_car *add_car(char *my_znacka, unsigned short int my_rok_vyroby)
 {
-    char               *znacka     = malloc(sizeof(char) * strlen(my_znacka));
-    unsigned short int *rok_vyroby = malloc(sizeof(unsigned short int));
-    a_car              *car        = malloc(sizeof(a_car));
+    a_car *car = malloc(sizeof(a_car));
+    *car = (a_car) { my_znacka, my_rok_vyroby };
 
-    strcpy(znacka, my_znacka);
-    *rok_vyroby = my_rok_vyroby;
-    *car        = (a_car) { znacka, rok_vyroby };
+    //strcpy(car -> znacka, my_znacka);
 
     return car;
 }
 
 void show_car(a_car *car)
 {
-    printf("Znacka: %16s, rok_vyroby: %5d\n", car -> znacka, *(car -> rok_vyroby));
+    printf("Znacka: %16s, rok_vyroby: %5d\n", car -> znacka, car -> rok_vyroby);
 }

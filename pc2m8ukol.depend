@@ -6,14 +6,14 @@
 	"my_rec.h"
 	"my_car.h"
 
-1648310456 source:/home/vofy/Projects/pc2m8ukol/my_rec.c
+1648484203 source:/home/vofy/Projects/pc2m8ukol/my_rec.c
 	"stdio.h"
 	"stdlib.h"
 	"string.h"
 
 1648325243 /home/vofy/Projects/pc2m8ukol/my_rec.h
 
-1648324788 source:/home/vofy/Projects/pc2m8ukol/my_car.c
+1648484812 source:/home/vofy/Projects/pc2m8ukol/my_car.c
 	"stdio.h"
 	"stdlib.h"
 	"string.h"
