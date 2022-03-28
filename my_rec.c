@@ -15,13 +15,8 @@ int pocet_zaznamu = 0;  // pocet zaznamu v karte
 // +++ pridani zaznamu do karty
 void add_rec(char *my_name, double my_km, double my_fuel)
 {
-    char *name = malloc(strlen(my_name));
-    strcpy(name, my_name);
-
     records[pocet_zaznamu] =  malloc(sizeof(a_rec));
-    records[pocet_zaznamu] -> name = name;
-    records[pocet_zaznamu] -> km = my_km;
-    records[pocet_zaznamu] -> fuel = my_fuel;
+    *records[pocet_zaznamu] = (a_rec) { my_name, my_km, my_fuel };
 
     pocet_zaznamu++;
 }
@@ -44,7 +39,7 @@ void all_rec()
 
     if(pocet_zaznamu)
         for(int i = 0; i < pocet_zaznamu; i++)
-            printf("Jmého: %8s, km: %7.1f, fuel: %5.1f\n", records[i] -> name, records[i] -> km, records[i] -> fuel);
+            printf("Jizda: jmeno - %8s, km - %7.1f, spotreba - %5.1f\n", records[i] -> name, records[i] -> km, records[i] -> fuel);
     else
         printf("Nebyly nalazene zadne zaznamy.");
 

@@ -13,12 +13,10 @@ a_car *add_car(char *my_znacka, unsigned short int my_rok_vyroby)
     a_car *car = malloc(sizeof(a_car));
     *car = (a_car) { my_znacka, my_rok_vyroby };
 
-    //strcpy(car -> znacka, my_znacka);
-
     return car;
 }
 
 void show_car(a_car *car)
 {
-    printf("Znacka: %16s, rok_vyroby: %5d\n", car -> znacka, car -> rok_vyroby);
+    printf("Auto: znacka - %16s, rok_vyroby - %5d\n", car -> znacka, car -> rok_vyroby);
 }
