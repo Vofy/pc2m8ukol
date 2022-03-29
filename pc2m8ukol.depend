@@ -1,22 +1,19 @@
 # depslib dependency file v1.0
-1648324940 source:/home/vofy/Projects/pc2m8ukol/main.c
+1648538421 source:/home/vofy/Projects/pc2m8ukol/main.c
 	"stdio.h"
 	"stdlib.h"
-	"string.h"
 	"my_rec.h"
 	"my_car.h"
 
-1648487288 source:/home/vofy/Projects/pc2m8ukol/my_rec.c
+1648538390 source:/home/vofy/Projects/pc2m8ukol/my_rec.c
 	"stdio.h"
 	"stdlib.h"
-	"string.h"
 
-1648325243 /home/vofy/Projects/pc2m8ukol/my_rec.h
+1648504755 /home/vofy/Projects/pc2m8ukol/my_rec.h
 
-1648487160 source:/home/vofy/Projects/pc2m8ukol/my_car.c
+1648538405 source:/home/vofy/Projects/pc2m8ukol/my_car.c
 	"stdio.h"
 	"stdlib.h"
-	"string.h"
 
-1648325154 /home/vofy/Projects/pc2m8ukol/my_car.h
+1648504755 /home/vofy/Projects/pc2m8ukol/my_car.h
 
